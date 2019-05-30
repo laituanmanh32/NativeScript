@@ -80,7 +80,7 @@ You can use the special value '$index' in the item template selector expression 
  {%raw%}<ListView items="{{ myItems }}" itemTemplateSelector="$index % 2 === 0 ? 'even' : 'odd'">
     <ListView.itemTemplates>
       <template key="even">
-        <Label text="{{ age }}" style.backgroundColor="white" />
+        <Label text="{{ age }}" style.backgroundColor="green" />
       </template>
       <template key="odd">
         <Label text="{{ age }}" style.backgroundColor="gray" />

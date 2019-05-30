@@ -633,7 +633,7 @@ export class SafeAreaTests extends testModule.UITest<any> {
     private flex_column_children_components_in_safe_area(pageOptions?: helper.PageOptions) {
         const snippet = `
         <FlexboxLayout id="flex" flexDirection="column" backgroundColor="Crimson">
-            <Label id="child0" backgroundColor="white" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod fermentum erat, eu vehicula nunc scelerisque quis. Aenean consequat elit sed lacus aliquam consequat." />
+            <Label id="child0" backgroundColor="green" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod fermentum erat, eu vehicula nunc scelerisque quis. Aenean consequat elit sed lacus aliquam consequat." />
             <Label id="child1" flexGrow="1" backgroundColor="green" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod fermentum erat, eu vehicula nunc scelerisque quis. Aenean consequat elit sed lacus aliquam consequat." />
             <Label id="child2" backgroundColor="red" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod fermentum erat, eu vehicula nunc scelerisque quis. Aenean consequat elit sed lacus aliquam consequat." />
         </FlexboxLayout>
@@ -672,7 +672,7 @@ export class SafeAreaTests extends testModule.UITest<any> {
     private flex_row_children_components_in_safe_area(pageOptions?: helper.PageOptions) {
         const snippet = `
         <FlexboxLayout id="flex" flexDirection="row" backgroundColor="Crimson">
-            <Label id="child0" backgroundColor="white" text="Lorem" />
+            <Label id="child0" backgroundColor="green" text="Lorem" />
             <Label id="child1" flexGrow="1" backgroundColor="green" text="Lorem" />
             <Label id="child2" backgroundColor="red" text="Lorem" />
         </FlexboxLayout>
@@ -711,7 +711,7 @@ export class SafeAreaTests extends testModule.UITest<any> {
     private flex_column_nested_layouts_beyond_safe_area(pageOptions?: helper.PageOptions) {
         const snippet = `
         <FlexboxLayout id="flex" flexDirection="column">
-            <StackLayout id="child0" backgroundColor="white">
+            <StackLayout id="child0" backgroundColor="green">
                 <Label text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod fermentum erat, eu vehicula nunc scelerisque quis. Aenean consequat elit sed lacus aliquam consequat."></Label>
             </StackLayout>
             <StackLayout id="child1" flexGrow="1" backgroundColor="green">
@@ -757,7 +757,7 @@ export class SafeAreaTests extends testModule.UITest<any> {
     private flex_row_nested_layouts_beyond_safe_area(pageOptions?: helper.PageOptions) {
         const snippet = `
         <FlexboxLayout id="flex" flexDirection="row">
-            <StackLayout id="child0" backgroundColor="white">
+            <StackLayout id="child0" backgroundColor="green">
                 <Label text="Lorem"></Label>
             </StackLayout>
             <StackLayout id="child1" flexGrow="1" backgroundColor="green">

@@ -1,2 +1,4 @@
-<Frame defaultPage="main-page">
-</Frame>
+<!-- <Frame defaultPage="main-page">
+</Frame> -->
+
+<Button text="kur"></Button>
