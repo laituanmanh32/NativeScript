@@ -1,7 +1,0 @@
-{
-    "extends": "../tsconfig.shared",
-    "exclude": [
-        "node_modules",
-        "platforms"
-    ]
-}
