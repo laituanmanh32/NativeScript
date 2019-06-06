@@ -45,7 +45,7 @@
     "typescript": "^3.1.6"
   },
   "scripts": {
-    "grunt": "grunt",
+    "grunt": "grunt just-build",
     "setup-widgets": "( cd tns-core-modules-widgets && sh build.sh ) && npm run dev-link-tns-core-modules-widgets",
     "setup": "npm run dev-link-tns-platform-declarations && npm run dev-link-tns-core-modules && npm run dev-link-tests && npm run dev-link-apps && npm run dev-link-e2e-modal",
     "tsc": "node  --max_old_space_size=4096 ./node_modules/typescript/bin/tsc",
