@@ -459,8 +459,6 @@ module.exports = function (grunt) {
     grunt.registerTask("get-ready-packages", ["copy:readyPackages"]);
 
     grunt.registerTask("default", (skipTsLint ? [] : ["shell:tslint"]).concat([
-        "build-all",
-        "pack-apps",
-        "get-ready-packages"
+        "build-all"
     ]));
 };
