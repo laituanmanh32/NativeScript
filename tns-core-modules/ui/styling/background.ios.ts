@@ -46,7 +46,7 @@ export module ios {
             clearNonUniformBorders(nativeView);
         }
 
-        clearGradient(nativeView);
+        // clearGradient(nativeView);
         if (background.image instanceof LinearGradient) {
             drawGradient(nativeView, background.image);
         }
@@ -738,8 +738,11 @@ function drawGradient(nativeView: NativeView, gradient: LinearGradient) {
 }
 
 function clearGradient(nativeView: NativeView): void {
-    if (nativeView.gradientLayer) {
-        (<CAGradientLayer>nativeView.gradientLayer).removeFromSuperlayer();
+    if (nativeView instanceof UINavigationBar && nativeView.gradientLayer) {
+          (<CAGradientLayer>(
+            nativeView.gradientLayer
+          ))
+          .removeFromSuperlayer();
     }
 }
 
